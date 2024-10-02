@@ -1,0 +1,21 @@
+spring:
+  config:
+    activate:
+      on-profile: dev
+  data:
+    mongodb:
+      host: ${HOST_NAME:localhost}
+      password: ${PASSWORD:kjb*(^cewefd}
+      port: ${PORT:27017}
+      username: neyu
+      database: ${DATABASE:admin}
+  output:
+    ansi:
+      enabled: always
+
+logging:
+  level:
+    root: warn
+    org.springframework.web: debug
+  file:
+    name: "test.log"
